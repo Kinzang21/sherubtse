@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(clocktower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .accordion {
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  
+  .accordion-item {
+    border: 1px solid #cdc8c8;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .accordion-item:hover{
+    transform: scale(0.9);
+  }
+  
+  .accordion-header {
+    background-color: #1f1d1d77;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background-color: #64686cad;
+}
+  .accordion-content {
+    max-height: 0;
+    color: wheat;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #1f1d1d77;
+    padding: 0 15px;
+  }
+  
+  .accordion-content p {
+    margin: 15px 0;
+  }
+  .ss_container{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .ss_items{
+    width: 100%;
+    background-color: #1f1d1d77;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: 0.3s;
+  }
+  .ss_items:hover{
+    transform: scale(0.9);
+  }
+  .ss_items ul{
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+    list-style-type: none;
+  }
+  .ss_items a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .ss_items a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 0);
+  }
+  .grid_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+.table_container{
+  color: white;
+  border: 2px solid ;
+  border-radius: 10px;
+  background-color:rgba(0, 0, 0, 0.686);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  font-size: large;
+}
+.table_container tr{
+  font-size: medium;
+  font-weight: 600;
+}
+.table_container td{
+  outline: 1px solid;
+  padding: 10px;
+}
+.table_container table{
+  padding: 10px;
+  transition: 0.3s;
+}
+.table_container td:hover{
+  background-color: #64686cad;
+  cursor: pointer;
+}
+.table_container table:hover{
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .grid_container{
+    display: block;
+  }
+  .table_container{
+    display: none;
+  }
+}

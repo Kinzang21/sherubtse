@@ -1,0 +1,157 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+.nagivation nav {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    align-items: center;
+    height: auto;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-list li {
+    margin:0%;
+    justify-items: space-between;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color:rgb(237, 230, 230);
+    padding: 14px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-size: large;
+    font-weight: 700;
+}
+
+.nav-list a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1); /* Zoom effect */
+    transition: transform 0.5s ease;
+}
+.active{
+    text-decoration: underline 2px;
+}
+body{
+    background: url(clocktower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.visionmission{
+    width: 300px;
+}
+h1{
+    padding: 10px;
+}
+h2{
+    padding: 10px;
+}
+legend{
+    font-size: x-large;
+    font-weight: 600;
+    border: 3px dashed rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+fieldset{
+    border: 3px dashed rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.6);
+    width: 100%;
+    height: 250px;
+    align-content: center;
+    cursor: pointer;
+}
+.card_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+/*.research{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}*/
+.research fieldset{
+    border: 2px solid;
+    border-radius: 25px;
+    justify-content: center;
+    margin: 0%;
+    width: 200px;
+}
+.research img{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    justify-content: center;
+}
+.research_img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.research_img figcaption{
+    text-wrap: balance;
+}
+.contact{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5px;
+}
+.card{
+    border: 2px solid ;
+    border-radius: 10px;
+    width: 200px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.659);
+    margin-bottom: 2%;
+}
+.card img{
+    width: 65%;
+}
+.content{
+    align-content: center;
+}
+.card button{
+    width: 50%;
+    height: 30px;
+    font-weight: 800;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+.card button:hover{
+    transform:scale(1.1);
+    background-color: rgba(0, 0, 255, 0.395);
+    color: rgb(255, 255, 255);
+    transform-origin: center;
+}
+

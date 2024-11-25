@@ -1,0 +1,67 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: url(programme.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+legend{
+    font-size: large;
+    font-weight: 600;
+    margin: auto;
+    color: white;
+}
+.card img{
+    display: flex;
+    width: 300px;
+    padding: 0%;
+    margin: 0%;
+    border: 2px solid none;
+    border-radius: 20px;
+}
+p{
+    font-size: larger;
+    text-wrap: balance;
+    text-align: center;
+    color: white;
+}
+.card-container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 15px 15px 15px;
+}
+.card fieldset{
+    margin-left: 5%;
+    border-radius: 10px;
+    display:inline;
+    width: 310px;
+    background-color: rgba(0, 0, 0, 0.604);
+    box-shadow: 0 4px 8px 0 rgb(38, 51, 197);
+    transition: 0.3s ease;
+}
+.card{
+    display: flex;
+    justify-content: space-evenly; 
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.card-container:hover> :not(:hover){
+    filter: blur(2px);
+}

@@ -1,0 +1,117 @@
+* {
+     margin: 0; 
+     padding: 0; 
+     box-sizing: border-box;
+} 
+body {
+     font-family: 'Times New Roman', Times, serif; 
+     font-size: 16px; 
+     display: flex; 
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+     min-height: 100vh;
+     margin: 0;
+     background: url(about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.backnav{
+    background-color:rgba(0, 0, 0, 0.508);
+    padding: 2px 15px;
+    border: 2px solid rgba(253, 253, 253, 0.53);
+    border-radius: 5px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.backnav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.508);
+    padding: 1em;
+    border: 1px solid rgb(235, 229, 229);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    width: 400px;
+    transition: 0.4s;
+}
+.container:hover{
+    transform: scale(1.1);
+    transform: transform 0.4s ease-in-out ;
+}
+
+.form{padding: 10px 20px;}
+.form h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.form-field{margin-bottom: 5px;
+}
+.form-field label{
+    display: block;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+.form-field input{
+    display: flex;
+    border: 2px solid #ffffff87;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.508);
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+}
+.form-field.error input{border-color: red;}
+.form-field.success input{border-color: green;}
+.form-field small{
+    color: #ff0000;
+    font-weight: 600;
+}
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+    animation-fill-mode: forwards; /* Ensures the final state is maintained */
+    opacity: 0; /* Start hidden in case JavaScript is disabled */
+  }
+
+
+/*button*/
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 3%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btn:hover{
+    background: #bfc4c974; color: #fff; cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container{
+        width: 60%;
+    }
+}
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }

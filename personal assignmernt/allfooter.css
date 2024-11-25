@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+.rowlast2{
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center; 
+    width: 200px;
+}
+.rowlast2 ul{
+    list-style-type: none;
+}
+.rowlast2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rowlast{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: x-small;
+    padding-top: 20px;
+}

@@ -1,0 +1,199 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background: url(clocktower.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nagivation nav {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    align-items: center;
+    height: auto;
+}
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.nav-list li {
+    margin:0%;
+    justify-items: space-between;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color:rgb(237, 230, 230);
+    padding: 14px 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    font-size: large;
+    font-weight: 700;
+}
+
+.nav-list a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.1); /* Zoom effect */
+    transition: transform 0.5s ease;
+}
+.nav-list a:active{
+    text-decoration: underline 1px;
+    transition: 1s;
+}
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+body img{
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    height:90vh;
+}
+.searchbox{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    display: table-row;
+    text-align: center;
+}
+.searchbox input{
+    width: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 8px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.searchbox input:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    border: 2px dashed rgb(254, 254, 254);
+}
+.intro{
+    font-size: larger;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    color: rgb(255, 255, 255);
+}
+.loginbox{
+    display: flex;
+    justify-content: center;
+}
+
+.loginbox p{
+    padding: 5%;
+    color:rgb(254, 254, 254);
+    font-weight: 600;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.384);
+    border: 2px solid ;
+    border-radius: 15px;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+}
+button{
+    padding: 5px 15px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgb(253, 253, 253);
+    border-radius: 5px;
+    background-color: rgba(3, 3, 3, 0.495);
+    color: white;
+    font-weight: 600; 
+    margin-top: 5%;
+}
+.signupbtn{
+    padding: 5px 11px;
+}
+button:hover{
+    transform: scale(0.9);
+    transition: transform 0.2s ease;
+}
+.signup{
+    padding: 5px 11px;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+.rowlast2{
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center; 
+    width: 200px;
+}
+.rowlast2 ul{
+    list-style-type: none;
+}
+.rowlast2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.rowlast{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: x-small;
+    padding-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #007BFF;
+        padding: 10px 0;
+    }
+
+    .nav-list:active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+   
